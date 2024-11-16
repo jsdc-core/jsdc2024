@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from './Logo';
 
 const HomePage = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-white relative">
       {/* Navigation */}
@@ -12,7 +14,18 @@ const HomePage = () => {
             <span className="ml-2 px-2 py-1 text-sm font-bold text-black border border-gray-300 rounded">CONF'24</span>
           </div>
           
-          <div className="flex space-x-6 text-sm items-center">
+          {/* Hamburger Menu Button */}
+          <button 
+            className="md:hidden z-50"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <div className="w-6 h-0.5 bg-black mb-1"></div>
+            <div className="w-6 h-0.5 bg-black mb-1"></div>
+            <div className="w-6 h-0.5 bg-black"></div>
+          </button>
+
+          {/* Desktop Menu */}
+          <div className="hidden md:flex space-x-6 text-sm items-center">
             <a href="#speakers" className="hover:text-gray-600 flex items-center">SPEAKERS</a>
             <a href="#sponsors" className="hover:text-gray-600 flex items-center">SPONSORS</a>
             <a href="#location" className="hover:text-gray-600 flex items-center">LOCATION</a>
@@ -22,6 +35,26 @@ const HomePage = () => {
             >
               GET TICKETS
             </a>
+          </div>
+
+          {/* Mobile Menu */}
+          <div className={`
+            fixed inset-0 bg-white z-40 flex flex-col items-center justify-center
+            transition-transform duration-300 ease-in-out
+            ${isMenuOpen ? 'transform translate-x-0' : 'transform translate-x-full'}
+            md:hidden
+          `}>
+            <div className="flex flex-col space-y-8 text-xl">
+              <a href="#speakers" className="hover:text-gray-600">SPEAKERS</a>
+              <a href="#sponsors" className="hover:text-gray-600">SPONSORS</a>
+              <a href="#location" className="hover:text-gray-600">LOCATION</a>
+              <a 
+                href="https://your-ticket-link.com" 
+                className="bg-primary-blue text-white px-4 py-2 hover:bg-blue-600 text-center"
+              >
+                GET TICKETS
+              </a>
+            </div>
           </div>
         </div>
       </nav>
