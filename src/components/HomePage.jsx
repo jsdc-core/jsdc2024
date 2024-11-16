@@ -30,7 +30,9 @@ const HomePage = () => {
             <a href="#sponsors" className="hover:text-gray-600 flex items-center">SPONSORS</a>
             <a href="#location" className="hover:text-gray-600 flex items-center">LOCATION</a>
             <a 
-              href="https://your-ticket-link.com" 
+              href="https://jsdc.kktix.cc/" 
+              target="_blank"
+              rel="noreferrer"
               className="bg-primary-blue text-white px-4 py-2 hover:bg-blue-600 flex items-center"
             >
               GET TICKETS
@@ -49,7 +51,9 @@ const HomePage = () => {
               <a href="#sponsors" className="hover:text-gray-600">SPONSORS</a>
               <a href="#location" className="hover:text-gray-600">LOCATION</a>
               <a 
-                href="https://your-ticket-link.com" 
+                href="https://jsdc.kktix.cc/"
+                target="_blank"
+                rel="noreferrer"
                 className="bg-primary-blue text-white px-4 py-2 hover:bg-blue-600 text-center"
               >
                 GET TICKETS
@@ -74,14 +78,16 @@ const HomePage = () => {
             JSDC 2024 IS HERE.
           </h1>
           <p className="text-2xl mb-8">
-            DECEMBER 21ST - ONLINE EVENT
+            DECEMBER 21ST - VIRTUAL EVENT
           </p>
           <a 
-            href="https://your-ticket-link.com"
+            href="https://jsdc.kktix.cc/"
+            target="_blank"
+            rel="noreferrer"
             className="bg-primary-blue text-white px-8 py-4 text-lg hover:bg-blue-600 inline-block"
           >
             GET TICKETS
-            <span className="block text-sm mt-1">VIRTUAL EVENT</span>
+            <span className="block text-sm mt-1">ONLINE EVENT</span>
           </a>
         </div>
       </div>
