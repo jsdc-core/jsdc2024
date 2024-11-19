@@ -30,7 +30,7 @@ const HomePage = () => {
             <a href="#sponsors" className="hover:text-gray-600 flex items-center">SPONSORS</a>
             <a href="#location" className="hover:text-gray-600 flex items-center">LOCATION</a>
             <a 
-              href="https://jsdc.kktix.cc/" 
+              href="https://www.accupass.com/event/2411191318271681933268" 
               target="_blank"
               rel="noreferrer"
               className="bg-primary-blue text-white px-4 py-2 hover:bg-blue-600 flex items-center"
@@ -51,7 +51,7 @@ const HomePage = () => {
               <a href="#sponsors" className="hover:text-gray-600">SPONSORS</a>
               <a href="#location" className="hover:text-gray-600">LOCATION</a>
               <a 
-                href="https://jsdc.kktix.cc/"
+                href="https://www.accupass.com/event/2411191318271681933268"
                 target="_blank"
                 rel="noreferrer"
                 className="bg-primary-blue text-white px-4 py-2 hover:bg-blue-600 text-center"
@@ -81,7 +81,7 @@ const HomePage = () => {
             DECEMBER 21ST - VIRTUAL EVENT
           </p>
           <a 
-            href="https://jsdc.kktix.cc/"
+            href="https://www.accupass.com/event/2411191318271681933268"
             target="_blank"
             rel="noreferrer"
             className="bg-primary-blue text-white px-8 py-4 text-lg hover:bg-blue-600 inline-block"
