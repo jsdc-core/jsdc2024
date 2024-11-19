@@ -35,7 +35,7 @@ const HomePage = () => {
               rel="noreferrer"
               className="bg-primary-blue text-white px-4 py-2 hover:bg-blue-600 flex items-center"
             >
-              GET TICKETS
+              立即報名
             </a>
           </div>
 
@@ -56,7 +56,7 @@ const HomePage = () => {
                 rel="noreferrer"
                 className="bg-primary-blue text-white px-4 py-2 hover:bg-blue-600 text-center"
               >
-                GET TICKETS
+                立即報名
               </a>
             </div>
           </div>
@@ -78,7 +78,7 @@ const HomePage = () => {
             JSDC 2024 IS HERE.
           </h1>
           <p className="text-2xl mb-8">
-            DECEMBER 21ST - VIRTUAL EVENT
+            DECEMBER 21ST - 線上活動
           </p>
           <a 
             href="https://www.accupass.com/event/2411191318271681933268"
@@ -86,7 +86,7 @@ const HomePage = () => {
             rel="noreferrer"
             className="bg-primary-blue text-white px-8 py-4 text-lg hover:bg-blue-600 inline-block"
           >
-            GET TICKETS
+            立刻報名
             <span className="block text-sm mt-1">ONLINE EVENT</span>
           </a>
         </div>
