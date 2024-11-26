@@ -1,25 +1,40 @@
 .speakers-section {
+    background-color: white;
     padding: 2rem;
-    background-color: #1a2332;
-    color: white;
   }
   
-  .speakers-section h2 {
-    text-align: center;
-    margin-bottom: 2rem;
+  .speakers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
   
-  .speaker-card {
+  .speaker-row {
+    background: white;
+    border-radius: 12px;
     padding: 1rem;
-    text-align: center;
+    box-shadow: 0 4px 12px rgba(128, 100, 155, 0.15);
+    transition: all 0.3s ease;
+  }
+  
+  .speaker-main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .speaker-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
   
   .speaker-image {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    border-top-left-radius: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     overflow: hidden;
+    border: 2px solid #f0f0f0;
   }
   
   .speaker-image img {
@@ -28,10 +43,61 @@
     object-fit: cover;
   }
   
+  .speaker-title h4 {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .expand-button {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .expand-button span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.3s ease;
+    left: 0;
+  }
+  
+  .expand-button span:first-child {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .expand-button span:last-child {
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+  }
+  
+  .expand-button.expanded span:last-child {
+    transform: translateY(-50%) rotate(0);
+  }
+  
+  .speaker-description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    margin-top: 0;
+  }
+  
+  .speaker-row.expanded .speaker-description {
+    max-height: 500px;
+    margin-top: 1rem;
+  }
+  
   .placeholder-image {
     width: 100%;
     height: 100%;
-    background-color: #808080;
+    background-color: #f0f0f0;
+    border-radius: 50%;
   }
   
   .speaker-card h3 {
@@ -48,4 +114,56 @@
   /* Swiper customization */
   .swiper-pagination-bullet {
     background-color: white;
-  } 
+  }
+  
+  .speaker-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .speaker-details h3 {
+    margin: 0;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .social-link {
+    color: #666;
+    font-size: 1.25rem;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-link:hover {
+    color: #333;
+  }
+  
+  .social-link[href*="github.com"]:hover {
+    color: #24292e;
+  }
+  
+  .social-link[href*="facebook.com"]:hover {
+    color: #1877f2;
+  }
+  
+  .social-link[href*="instagram.com"]:hover {
+    color: #e4405f;
+  }
+  
+  .speaker-outline {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+  }
+  
+  .speaker-outline h4 {
+    margin: 0 0 0.5rem 0;
+    font-weight: bold;
+  }
+  

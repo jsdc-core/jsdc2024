@@ -1,0 +1,48 @@
+[
+    {
+      "image": "./images/speaker/codefarmer.png",
+      "nickname": "codefarmer",
+      "introduction": "一個 webdev 小碼農，更多專注在前端領域。近期開始經營「codefarmer.tw」個人部落格，喜歡寫文章分享科技新知與新工具。平時不寫程式時，喜歡喝咖啡、看美劇、打電動。",
+      "topic": "一起探索 VoidZero 為 JS 生態系準備的瑞士刀",
+      "outline": "在今年的 ViteConf 2024 時，Vue 及 Vite 的作者尤雨溪宣佈成立一間新公司 — VoidZero，目標在打造一整套開源且高效能的 JavaScript 開發工具鏈。在這個生態系中將試著去整合 Vite、Vitest、Rolldown、Oxc 這些工具，提供一套讓其他上層框架能泛用的 build tool、test runner、bundler、linter 等工具，在這個分享中期待能由淺入深帶大家一起探索這些新興工具。",
+      "other": [
+        "https://github.com/ckchuang-dev",
+        "https://www.instagram.com/codefarmer.tw/"
+      ]
+    },
+    {
+      "image": "./images/speaker/vivian_y",
+      "nickname": "Vivian Yeh",
+      "introduction": "英文系畢業的軟體工程師，擁有 3 年開發經驗，擅長職涯探索、自我成長等相關領域，同時為 IG @vivian_enlife 的自媒體經營者。",
+      "topic": "輕鬆串接 Gemini API：從 Google AI Studio 到 Vertex AI in Firebase 的前端實作",
+      "outline": "- Gemini 模型的優勢\n- Google AI Studio 介紹\n- Google AI Studio 實作\n- AI 服務在前端實作的隱憂\n- Vertex AI in Firebase 介紹\n- Vertex AI in Firebase 實作\n- AI 融入軟體服務時的實作技巧\n- 成本評估自動化工具介紹：Google APP Script",
+      "other": [
+        "https://github.com/vivian1223",
+        "https://www.instagram.com/vivian_enlife/"
+      ]
+    },
+    {
+      "image": "./images/speaker/taichunmin.png",
+      "nickname": "戴均民",
+      "introduction": "車能網資訊股份有限公司 飄到台北工作的台中人，目前是網站後端工程師，對 LINE Chatbot、RFID、量化交易有興趣，如果有興趣的話歡迎來跟我聊聊喔！",
+      "topic": null,
+      "outline": null,
+      "other": [
+        "https://github.com/taichunmin",
+        "https://www.facebook.com/taichunmin",
+        "https://taichunmin.idv.tw/"
+      ]
+    },
+    {
+      "image": "./images/speaker/terry_lin.jpg",
+      "nickname": "Terry Lin",
+      "introduction": "現任 MediaTek 前端工程師，專注於生成式 AI 平台的開發。過去在 Dcard 工作時，經常看到公司前輩活躍於社群中，長期潛水的我也首次探出水面，嘗試進行技術分享！有人說，分享本身也是自己學習更多的機會，希望能藉此與大家交流、共同成長。",
+      "topic": null,
+      "outline": null,
+      "other": [
+        "https://github.com/terry623",
+        "https://www.facebook.com/terry92516"
+      ]
+    }
+  ]
+  

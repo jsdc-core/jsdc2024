@@ -26,9 +26,78 @@ const HomePage = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6 text-sm items-center">
-            <a href="#speakers" className="hover:text-gray-600 flex items-center">SPEAKERS</a>
-            <a href="#sponsors" className="hover:text-gray-600 flex items-center">SPONSORS</a>
-            <a href="#location" className="hover:text-gray-600 flex items-center">LOCATION</a>
+            <a href="#speakers" className="hover:text-gray-600 flex items-center" onClick={(e) => {
+              e.preventDefault();
+              document.querySelector('#speakers').scrollIntoView({ behavior: 'smooth' });
+            }}>SPEAKERS</a>
+            <a href="#sponsors" className="hover:text-gray-600 flex items-center" onClick={(e) => {
+              e.preventDefault();
+              const $jsdcTitle = document.querySelector('#jsdc-title');
+              $jsdcTitle.textContent = 'DONATE & $HOW CODE';
+              const symbols = ['♥', '$', '💰'];
+              const colors = ['#ff69b4', '#32cd32', '#ffd700'];
+              
+              for(let i = 0; i < 50; i++) {
+                const symbol = document.createElement('div');
+                const randomSymbol = symbols[Math.floor(Math.random() * symbols.length)];
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                
+                symbol.style.position = 'fixed';
+                symbol.style.left = Math.random() * window.innerWidth + 'px';
+                symbol.style.top = '-50px';
+                symbol.style.color = randomColor;
+                symbol.style.fontSize = '24px';
+                symbol.style.zIndex = '1000';
+                symbol.innerHTML = randomSymbol;
+                symbol.className = 'bouncing-symbol';
+                
+                document.body.appendChild(symbol);
+
+                // Animate falling with bounce
+                const keyframes = [
+                  { transform: 'translateY(0) rotate(0deg)', offset: 0 },
+                  { transform: `translateY(${window.innerHeight}px) rotate(${Math.random() * 360}deg)`, offset: 0.7 },
+                  { transform: `translateY(${window.innerHeight - 50}px) rotate(${Math.random() * 360}deg)`, offset: 0.8 },
+                  { transform: `translateY(${window.innerHeight}px) rotate(${Math.random() * 360}deg)`, offset: 0.9 },
+                  { transform: `translateY(${window.innerHeight - 25}px) rotate(${Math.random() * 360}deg)`, offset: 0.95 },
+                  { transform: `translateY(${window.innerHeight}px) rotate(${Math.random() * 360}deg)`, offset: 1 }
+                ];
+
+                const timing = {
+                  duration: 3000 + Math.random() * 2000,
+                  iterations: Infinity,
+                  easing: 'ease-in-out'
+                };
+
+                symbol.animate(keyframes, timing);
+
+                // Random horizontal movement
+                setInterval(() => {
+                  const newX = parseFloat(symbol.style.left) + (Math.random() - 0.5) * 100;
+                  symbol.style.left = `${Math.max(0, Math.min(window.innerWidth, newX))}px`;
+                }, 1000);
+
+                // Fade out and remove after 30 seconds
+                setTimeout(() => {
+                  symbol.animate([
+                    { opacity: 1 },
+                    { opacity: 0 }
+                  ], {
+                    duration: 1000,
+                    fill: 'forwards'
+                  }).onfinish = () => symbol.remove();
+                }, 19000);
+              }
+
+              // Change text back to "SPONSORS" after 5 seconds
+              setTimeout(() => {
+                $jsdcTitle.textContent = 'JSDC 2024 IS HERE.';
+              }, 5000);
+            }}>SPONSORS</a>
+            <a href="#hosts" className="hover:text-gray-600 flex items-center" onClick={(e) => {
+              e.preventDefault();
+              document.querySelector('#hosts').scrollIntoView({ behavior: 'smooth' });
+            }}>HOST</a>
             <a 
               href="https://www.accupass.com/event/2411191318271681933268" 
               target="_blank"
@@ -74,7 +143,7 @@ const HomePage = () => {
 
         {/* Main Content */}
         <div className="text-center z-10">
-          <h1 className="text-7xl font-bold mb-4">
+          <h1 id="jsdc-title" className="text-7xl font-bold mb-4">
             JSDC 2024 IS HERE.
           </h1>
           <p className="text-2xl mb-8">

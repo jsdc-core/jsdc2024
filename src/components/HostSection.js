@@ -25,7 +25,7 @@ const speakers = [
 
 function SpeakersSection() {
   return (
-    <section className="host-section">
+    <section id="hosts" className="host-section">
       <h2 style={{ fontSize: '48px', fontWeight: 'bold' }}>Host Members</h2>
       <Swiper
         spaceBetween={20}

@@ -19,6 +19,7 @@ function Footer() {
             <ul className="space-y-2">
               <li><a href="https://exma-square.co" className="text-gray-500 hover:text-gray-900">皇漢科技 EXMA-Square</a></li>
               <li><a href="https://www.facebook.com/dscareer/?locale=zh_TW" className="text-gray-500 hover:text-gray-900">資料科學家的工作日常</a></li>
+              <li><a href="https://hackmd.io/8KIFgcOWRbq5bvdiEHqlLw" className="text-gray-500 hover:text-gray-900">Tech Book Community</a></li>
             </ul>
           </div>
 
