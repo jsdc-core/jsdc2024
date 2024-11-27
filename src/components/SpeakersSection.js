@@ -33,16 +33,16 @@ function SpeakersSection() {
           >
             <div className="speaker-main-content">
               <div className="speaker-info">
-                <div className="speaker-image">
+                <div className="speaker-image" style={{ minHeight: '120px' }}>
                   {speaker.image ? (
-                    <img src={speaker.image} alt={speaker.nickname} />
+                    <img src={speaker.image} style={{ width: '120px', height: '120px', objectFit: 'cover' }} alt={speaker.nickname} />
                   ) : (
                     <div className="placeholder-image" />
                   )}
                 </div>
-                <div className="speaker-details" style={{ flex: '1', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                  <h3 style={{ textAlign: 'center', minWidth: '150px' }}>{speaker.nickname}</h3>
-                  <div className="social-links" style={{ textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
+                <div className="speaker-details">
+                  <h3>{speaker.nickname}</h3>
+                  <div className="social-links">
                     {speaker.other && speaker.other.map((link, linkIndex) => (
                       <a 
                         key={linkIndex}
@@ -57,9 +57,6 @@ function SpeakersSection() {
                   </div>
                 </div>
               </div>
-              <div className="speaker-title">
-                <h4>{speaker.topic}</h4>
-              </div>
               <button 
                 className={`expand-button ${expandedIndex === index ? 'expanded' : ''}`}
                 onClick={() => toggleExpand(index)}
@@ -69,7 +66,13 @@ function SpeakersSection() {
               </button>
             </div>
             <div className="speaker-description">
-              <p>{speaker.introduction}</p>
+              <p style={{ marginBottom: '1rem' }}>{speaker.introduction}</p>
+              {speaker.topic && (
+                <div className="speaker-title">
+                  <h4>大綱：</h4>
+                  <p><strong>{speaker.topic}</strong></p>
+                </div>
+              )}
               {speaker.outline && (
                 <div className="speaker-outline">
                   <h4>概述：</h4>
