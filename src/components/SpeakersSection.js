@@ -69,7 +69,7 @@ function SpeakersSection() {
               <p style={{ marginBottom: '1rem' }}>{speaker.introduction}</p>
               {speaker.topic && (
                 <div className="speaker-title">
-                  <h4>大綱：</h4>
+                  <h4>題目：</h4>
                   <p><strong>{speaker.topic}</strong></p>
                 </div>
               )}
