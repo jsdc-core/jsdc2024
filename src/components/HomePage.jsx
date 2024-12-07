@@ -1,11 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Logo from './Logo';
 
 const HomePage = () => {
+  const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Handle direct URL access
+  useEffect(() => {
+    const hash = location.pathname.replace('/', '');
+    if (hash) {
+      const element = document.getElementById(hash);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [location]);
 
   return (
     <div className="min-h-screen bg-white relative">
+      <Helmet>
+        <title>JSDC 2024 - JavaScript 開發者年會</title>
+        <meta name="description" content="JSDC 2024 JavaScript 開發者年會，12月21日線上活動" />
+        <meta property="og:title" content="JSDC 2024 - JavaScript 開發者年會" />
+        <meta property="og:description" content="JSDC 2024 JavaScript 開發者年會，12月21日線上活動" />
+        <link rel="canonical" href={`https://yourwebsite.com${location.pathname}`} />
+      </Helmet>
+
       {/* Navigation */}
       <nav className="absolute top-0 left-0 right-0 p-4 flex justify-center items-center">
         <div className="w-full max-w-6xl flex justify-between items-center">
@@ -26,8 +50,9 @@ const HomePage = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6 text-sm items-center">
-            <a href="#speakers" className="hover:text-gray-600 flex items-center" onClick={(e) => {
+            <a href="/speakers" className="hover:text-gray-600 flex items-center" onClick={(e) => {
               e.preventDefault();
+              window.history.pushState({}, '', '/speakers');
               document.querySelector('#speakers').scrollIntoView({ behavior: 'smooth' });
             }}>SPEAKERS</a>
             <a href="#sponsors" className="hover:text-gray-600 flex items-center" onClick={(e) => {
@@ -94,8 +119,9 @@ const HomePage = () => {
                 $jsdcTitle.textContent = 'JSDC 2024 IS HERE.';
               }, 5000);
             }}>SPONSORS</a>
-            <a href="#hosts" className="hover:text-gray-600 flex items-center" onClick={(e) => {
+            <a href="/hosts" className="hover:text-gray-600 flex items-center" onClick={(e) => {
               e.preventDefault();
+              window.history.pushState({}, '', '/hosts');
               document.querySelector('#hosts').scrollIntoView({ behavior: 'smooth' });
             }}>HOST</a>
             <a 
@@ -116,8 +142,9 @@ const HomePage = () => {
             md:hidden
           `}>
             <div className="flex flex-col space-y-8 text-xl">
-              <a href="#speakers" className="hover:text-gray-600" onClick={(e) => {
+              <a href="/speakers" className="hover:text-gray-600" onClick={(e) => {
                 e.preventDefault();
+                window.history.pushState({}, '', '/speakers');
                 document.querySelector('#speakers').scrollIntoView({ behavior: 'smooth' });
                 setTimeout(() => setIsMenuOpen(false), 100);
               }}>SPEAKERS</a>
@@ -188,9 +215,9 @@ const HomePage = () => {
                   }, 5000);
                 }, 300);
               }}>SPONSORS</a>
-              <a href="#hosts" className="hover:text-gray-600" onClick={(e) => {
+              <a href="/hosts" className="hover:text-gray-600" onClick={(e) => {
                 e.preventDefault();
-                setIsMenuOpen(false);
+                window.history.pushState({}, '', '/hosts');
                 document.querySelector('#hosts').scrollIntoView({ behavior: 'smooth' });
                 setTimeout(() => setIsMenuOpen(false), 100);
               }}>HOST</a>
