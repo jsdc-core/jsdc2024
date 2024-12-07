@@ -43,6 +43,96 @@
         "https://github.com/terry623",
         "https://www.facebook.com/terry92516"
       ]
+    },
+    {
+      "image": "./images/speaker/CheYu-0401-crop-sq.jpg",
+      "nickname": "吳哲宇",
+      "introduction": "台灣當代新媒體藝術家，其作品以演算法為靈魂，在數位領域中鑄造永恆的生命與情感。深植於工程學與藝術的交織界限，他透過對自然、物理、現代藝術及數學的深入鑽研，運用先進演算與互動技術，賦予數位藝術獨有的語言和生命。他最為人熟知的作品包括在 Art Blocks 平台上的「Seaham 海火腿」、「Electriz 電子實驗室」、「CryptoPochi 波奇」、「SoulFish 靈魂魚」、「The Soul of Flowers 花的靈魂」、「Urban Contour 城市輪廓」。",
+      "topic": "JavaScript 在新媒體藝術中的多層次實踐",
+      "outline": "JavaScript 是程式創作（Creative Coding）在新��體藝術領域中的重要工具，廣泛應用於互動設計、後端系統整合、視覺特效開發及藝術原型設計的各個層面。本次議程將透過實際案例，呈現 JavaScript 如何全方位支持從概念生成到作品實現的完整創作過程。\n\n以法國駐村計畫《永恆的瓶中花園》為例，將分享如何利用 JavaScript 開發生成藝術與視覺特效系統，並結合 Cursor AI Agent 提升創作效率。同時，運用 Node.js 串接 OpenAI 服務，賦予作品抽象轉換功能，並透過即時詩歌生成系統，讓數位花靈展現詩意化的靈魂。本次分享將探討技術如何融入程式創作，推動藝術與科技的深度結合。",
+      "other": [
+        "https://github.com/frank890417",
+        "https://www.instagram.com/cheyuwu345/",
+        "https://portaly.cc/cheyuwu"
+      ]
+    },
+    {
+      "image": "./images/speaker/nicolo-ribaudo.jpg",
+      "nickname": "Nicolò Ribaudo",
+      "introduction": "I'm a developer who loves open source and JavaScript. I work at Igalia, where I help push the web forward, and I maintain Babel — the JavaScript compiler. I'm also a TC39 delegate and I've helped develop different JavaScript proposals over the years.",
+      "topic": null,
+      "outline": null,
+      "other": [
+        "https://github.com/nicolo-ribaudo",
+        "https://bsky.app/profile/nicr.dev"
+      ]
+    },
+    {
+      "image": "./images/speaker/ray.png",
+      "nickname": "吳睿誠",
+      "introduction": "一個正在創業",
+      "topic": null,
+      "outline": null,
+      "other": [
+        "https://github.com/SR0725",
+        "https://www.threads.net/@ray.realms",
+        "https://ray-realms.com"
+      ]
+    },
+    {
+      "image": "./images/speaker/andy_yen2.png",
+      "nickname": "Andy Yen",
+      "introduction": "涉世未深的後端工程師，喜歡舒服的工作環境，也致力於讓團隊的工作環境變舒服。喜歡開源和資料庫的世界。",
+      "topic": null,
+      "outline": null,
+      "other": [
+        "https://github.com/onlyjackfrost",
+        "https://www.facebook.com/kiki3152TW/"
+      ]
+    },
+    {
+      "image": "./images/speaker/john_liu.jpg",
+      "nickname": "John Liu",
+      "introduction": "時常在 Web 全端開發技術領域打滾，有過多種語言和框架經驗，最近較常研究軟體品質、微前端與微服務議題，喜歡看見隊勝利大過個人勝利。\n\n目前在來自矽谷的資安公司 Netskope 協助帶團隊開發 SaaS 平台，並偶爾當個講師分享技術經驗。",
+      "topic": null,
+      "outline": null,
+      "other": [
+        "https://github.com/johnliu-tw",
+        "https://www.facebook.com/johnliu.software.thinking",
+        "https://johnliutw.medium.com/"
+      ]
+    },
+    {
+      "image": "./images/speaker/kjh.jpg",
+      "nickname": "黃冠融",
+      "introduction": "黃冠融是一名軟體工程師，同時也是一位技術顧問，不僅致力於引入軟體工程概念，還專注於行為設計。目前，他擔任 The Octalysis Group 的軟體顧問，並且是 Octalysis Prime（一個遊戲化導師平台）的軟體工程師。\n\n黃冠融目前經常在台灣進行軟體工程、管理與遊戲化的主題演講與授課。\n\n黃冠融於 2015 年開始踏入軟體行業，當時年僅 19 歲，是遊戲化與專案管理領域最年輕的先行者之一。2021 年，他在參與並領導不同 Scrum 團隊的近四年實踐後，獲得了 CSP-SM 資格。如今，他已協助許多不同類型的公司，包括種子期新創企業以及台灣上市公司，例如 HTC 等。",
+      "topic": null,
+      "outline": null,
+      "other": [
+        "https://github.com/kj-huang",
+        "https://www.facebook.com/profile.php?id=100006294520988"
+      ]
+    },
+    {
+      "image": "./images/speaker/kevin_hu.jpg",
+      "nickname": "Kevin Hu",
+      "introduction": "目前於倫敦新創 Olio 擔任前端工程師，曾在新加坡蝦皮任職，專注於前端技術開發。身為 React Native 愛好者，長期投入該領域並持續深耕，對其生態系有豐富的實務經驗與洞察。",
+      "topic": "React Native 朝聖之路",
+      "outline": "走訪世界各地的 React Native 大型研討會，包括 Chain React 、React Advanced 、React Native EU 、App.js Conf 以及 React Native London Conf ，累積了豐富的見聞與經驗。希望藉此機會，將 React Native 的前沿資訊與觀察帶回台灣，與大家分享並回饋社群。",
+      "other": [
+        "https://github.com/KevinHu2014",
+        "https://x.com/hsiangyuhu"
+      ]
+    },
+    {
+      "image": "./images/speaker/johnny.jpg",
+      "nickname": "Johnny",
+      "introduction": "大家好，我是 Johnny，從小白轉職擔任前端，資歷約 6年，之前在 Garena Taiwan 的 Revenue 團隊2年多擅長做各種動畫效果抽轉蛋活動頁以及遊戲官網，目前在 LINE Taiwan 的 Central Dev / UIT 團隊擔任軟體工程師，主要負責各種內外部系統、產品的前端方面架構建立、開發、維護，平日空閒時喜歡學習各種新技術知識，一邊學習一邊動手亂搞做些小玩具，歡迎互相交流！不論前後端只要我學得懂都學！",
+      "topic": "Web Containers - Let's develop Web with Web!!",
+      "outline": "* What is Web Containers?\n* Why Web Containers?\n* How to use Web Containers?\n* Demos\n* Compared with Docker/VM\n* Conclusion",
+      "other": [
+        "https://github.com/johnnywang1994",
+        "https://johnnywang1994.github.io/book/"
+      ]
     }
-  ]
-  
+]
