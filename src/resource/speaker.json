@@ -49,7 +49,7 @@
       "nickname": "吳哲宇",
       "introduction": "台灣當代新媒體藝術家，其作品以演算法為靈魂，在數位領域中鑄造永恆的生命與情感。深植於工程學與藝術的交織界限，他透過對自然、物理、現代藝術及數學的深入鑽研，運用先進演算與互動技術，賦予數位藝術獨有的語言和生命。他最為人熟知的作品包括在 Art Blocks 平台上的「Seaham 海火腿」、「Electriz 電子實驗室」、「CryptoPochi 波奇」、「SoulFish 靈魂魚」、「The Soul of Flowers 花的靈魂」、「Urban Contour 城市輪廓」。",
       "topic": "JavaScript 在新媒體藝術中的多層次實踐",
-      "outline": "JavaScript 是程式創作（Creative Coding）在新��體藝術領域中的重要工具，廣泛應用於互動設計、後端系統整合、視覺特效開發及藝術原型設計的各個層面。本次議程將透過實際案例，呈現 JavaScript 如何全方位支持從概念生成到作品實現的完整創作過程。\n\n以法國駐村計畫《永恆的瓶中花園》為例，將分享如何利用 JavaScript 開發生成藝術與視覺特效系統，並結合 Cursor AI Agent 提升創作效率。同時，運用 Node.js 串接 OpenAI 服務，賦予作品抽象轉換功能，並透過即時詩歌生成系統，讓數位花靈展現詩意化的靈魂。本次分享將探討技術如何融入程式創作，推動藝術與科技的深度結合。",
+      "outline": "JavaScript 是程式創作（Creative Coding）在新媒體藝術領域中的重要工具，廣泛應用於互動設計、後端系統整合、視覺特效開發及藝術原型設計的各個層面。本次議程將透過實際案例，呈現 JavaScript 如何全方位支持從概念生成到作品實現的完整創作過程。\n\n以法國駐村計畫《永恆的瓶中花園》為例，將分享如何利用 JavaScript 開發生成藝術與視覺特效系統，並結合 Cursor AI Agent 提升創作效率。同時，運用 Node.js 串接 OpenAI 服務，賦予作品抽象轉換功能，並透過即時詩歌生成系統，讓數位花靈展現詩意化的靈魂。本次分享將探討技術如何融入程式創作，推動藝術與科技的深度結合。",
       "other": [
         "https://github.com/frank890417",
         "https://www.instagram.com/cheyuwu345/",
