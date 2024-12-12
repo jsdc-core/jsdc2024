@@ -69,10 +69,10 @@
     },
     {
       "image": "./images/speaker/ray.png",
-      "nickname": "吳睿誠",
-      "introduction": "一個正在創業",
-      "topic": null,
-      "outline": null,
+      "nickname": "Ray 貓（吳睿誠）",
+      "introduction": "Ray 貓，熱愛貓貓與互動設計的前端工程師\n\n目前正經營「ray.realms」個人 Threads ，分享各種前端技術、生成式 AI 技術文章。\n\n曾在台大資訊組協助開發他們的課程網，目前在 BearDBT 擔任設計工程師\n\n擅長於新奇酷炫的網站開發，目前正在挑戰生成式 AI 與互動設計的結合創業。",
+      "topic": "從 ThreeJs 邁向 WebXR： 建構未來網頁的沉浸體驗",
+      "outline": "快速探索從 Three.js 出發到 WebXR 生態系的廣泛技術場景。分享一些現有的整合技術框架以及產品來加速開發具沉浸感的互動式應用。\n\n此外，我們將快速掃描現有的3D 網頁技術，展示這些工具如何串聯，實現虛擬與現實整合的網頁應用。",
       "other": [
         "https://github.com/SR0725",
         "https://www.threads.net/@ray.realms",
