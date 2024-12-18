@@ -1,0 +1,196 @@
+{
+  "scheduleData": [
+    {
+      "time": "09:30 – 09:35",
+      "title": "Opening",
+      "speaker": "主持人: Lois / Steven",
+      "type": ""
+    },
+    {
+      "time": "09:35 – 09:55",
+      "title": "React Native 朝聖之路",
+      "speaker": "胡翔喻Kevin Hu(React Native)",
+      "type": "mobile"
+    },
+    {
+      "time": "09:55 – 10:00",
+      "title": "休息",
+      "speaker": "",
+      "type": ""
+    },
+    {
+      "time": "10:00 – 10:20",
+      "title": "New Generation Web - 我們從前端到微前端的故事",
+      "speaker": "John（劉奕為 ）",
+      "type": "js"
+    },
+    {
+      "time": "10:20 – 10:25",
+      "title": "休息",
+      "speaker": "",
+      "type": ""
+    },
+    {
+      "time": "10:25 – 10:45",
+      "title": "Web fundamentals for performant web apps",
+      "speaker": "Dhrubajit Chowdhury",
+      "type": "js"
+    },
+    {
+      "time": "10:45 – 10:50",
+      "title": "休息",
+      "speaker": "",
+      "type": ""
+    },
+    {
+      "time": "10:50 – 11:10",
+      "title": "用網頁的 Web Serial 及 Web Bluetooth 控制你的嵌入式設備",
+      "speaker": "戴均民",
+      "type": "Iot"
+    },
+    {
+      "time": "11:10 – 11:15",
+      "title": "休息",
+      "speaker": "",
+      "type": ""
+    },
+    {
+      "time": "11:15 – 11:35",
+      "title": "一起探索 VoidZero 為 JS 生態系準備的瑞士刀",
+      "speaker": "Codefarmer",
+      "type": "Vite"
+    },
+    {
+      "time": "11:35 – 11:40",
+      "title": "休息",
+      "speaker": "",
+      "type": ""
+    },
+    {
+      "time": "11:40 – 12:10",
+      "title": "向量搜尋與Embedding Model的進階應用",
+      "speaker": "後端里長伯",
+      "type": "Data"
+    },
+    {
+      "time": "12:10 – 13:00",
+      "title": "舊時代社群 vs 新型態社群參與體驗",
+      "speaker": "主持人：維元老師, 後端里長伯, Vivian, Codefarmer",
+      "type": "論壇討論"
+    },
+    {
+      "time": "13:00 – 13:20",
+      "title": "用 Jotai 打造更輕量的 React 狀態管理",
+      "speaker": "林敏皓(Terry)",
+      "type": "React"
+    },
+    {
+      "time": "13:20 – 13:25",
+      "title": "休息",
+      "speaker": "",
+      "type": ""
+    },
+    {
+      "time": "13:25 – 13:45",
+      "title": "輕鬆串接 Gemini API：從 Google AI Studio 到 Vertex AI in Firebase 的前端實作",
+      "speaker": "Vivian",
+      "type": "Data"
+    },
+    {
+      "time": "13:45 – 13:50",
+      "title": "休息",
+      "speaker": "",
+      "type": ""
+    },
+    {
+      "time": "13:50 – 14:10",
+      "title": "JavaScript 在新媒體藝術中的多層次實踐",
+      "speaker": "吳哲宇",
+      "type": "JS 奇幻"
+    },
+    {
+      "time": "14:10 – 14:15",
+      "title": "休息",
+      "speaker": "",
+      "type": ""
+    },
+    {
+      "time": "14:15 – 14:35",
+      "title": "Web Containers - Let’s develop Web with Web!!",
+      "speaker": "Johnny(LINE)",
+      "type": "Web Container"
+    },
+    {
+      "time": "14:35 – 14:40",
+      "title": "休息",
+      "speaker": "",
+      "type": ""
+    },
+    {
+      "time": "14:40 – 15:00",
+      "title": "從 ThreeJs 邁向 WebXR： 建構未來網頁的沉浸體驗",
+      "speaker": "吳睿誠",
+      "type": "Three.js"
+    },
+    {
+      "time": "15:00 – 15:05",
+      "title": "休息",
+      "speaker": "",
+      "type": ""
+    },
+    {
+      "time": "15:05 – 15:25",
+      "title": "跨時區跨文化團隊管理的遠距工作心得",
+      "speaker": "黃冠融",
+      "type": "專案管理"
+    },
+    {
+      "time": "15:25 – 15:30",
+      "title": "休息",
+      "speaker": "",
+      "type": ""
+    },
+    {
+      "time": "15:30 – 15:50",
+      "title": "透過擴充功能提升 104 人資系統的查詢人才功能",
+      "speaker": "KK",
+      "type": "AI 擴充"
+    },
+    {
+      "time": "15:50 – 15:55",
+      "title": "休息",
+      "speaker": "",
+      "type": ""
+    },
+    {
+      "time": "15:55 – 16:15",
+      "title": "與資料對話：深入探索 WrenAI 的開源與架構",
+      "speaker": "祥溥（Andy）",
+      "type": "後端"
+    },
+    {
+      "time": "16:15 – 16:20",
+      "title": "休息",
+      "speaker": "",
+      "type": ""
+    },
+    {
+      "time": "16:20 – 17:10",
+      "title": "AI 時代下無法被取代的 JavaScript 開發者",
+      "speaker": "主持人：維元老師, 林敏皓(Terry), 吳睿誠 (Ray), 黃冠融, 祥溥（Andy）, Wei Wei",
+      "type": "論壇討論"
+    },
+    {
+      "time": "17:10 – 17:30",
+      "title": "An introduction to source maps",
+      "speaker": "Nicolò Ribaudo 🌈🇪🇺",
+      "type": ""
+    },
+    {
+      "time": "17:30 – 17:35",
+      "title": "Ending",
+      "speaker": "主持人: Lois / Steven",
+      "type": ""
+    }
+  ]
+} 
