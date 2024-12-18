@@ -1,81 +1,46 @@
 import React from 'react';
 import scheduleDataJson from '../resource/scheduleData.json';
 
-const ScheduleSection = () => {
+const ScheduleSection = ({ onSpeakerClick }) => {
   const { scheduleData } = scheduleDataJson;
   
   return (
-    <div className="schedule-section" style={{
-      padding: '60px 0',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-    }}>
-      <h1 style={{
-        fontSize: '48px',
-        marginBottom: '40px',
-        color: '#2E8B57'
-      }}>
+    <div id="schedule" className="schedule-section py-16 flex flex-col items-center">
+      <h1 className="text-4xl md:text-5xl mb-10 text-green-700 text-center">
+        Schedule<br/>
         大會議程
       </h1>
       
-      <div style={{
-        width: '85%',
-        maxWidth: '1200px',
-      }}>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr',
-          gap: '1px',
-          backgroundColor: '#f5f5f5',
-          borderRadius: '8px',
-          overflow: 'hidden',
-        }}>
+      <div className="w-11/12 max-w-5xl">
+        <div className="grid grid-cols-1 gap-1 bg-gray-100 rounded-lg overflow-hidden">
           {scheduleData.map((item, index) => (
-            <div key={index} style={{
-              display: 'grid',
-              gridTemplateColumns: '200px 1fr',
-              backgroundColor: 'white',
-              padding: '20px',
-              borderBottom: '1px solid #eee'
-            }}>
-              <div style={{
-                color: '#333',
-                fontWeight: '500',
-                fontSize: '18px'
-              }}>
+            <div key={index} className="grid grid-cols-1 md:grid-cols-[200px_1fr] bg-white p-5 border-b border-gray-200">
+              <div className="text-gray-700 bg-green-100 font-medium text-lg p-2 rounded">
                 {item.time}
               </div>
               <div>
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '10px'
-                }}>
+                <div className="flex items-center gap-2">
                   {item.type && (
-                    <span style={{
-                      backgroundColor: '#2E8B57',
-                      color: 'white',
-                      padding: '2px 8px',
-                      borderRadius: '4px',
-                      fontSize: '16px'
-                    }}>
+                    <span className="bg-green-700 text-white px-2 py-1 rounded text-sm">
                       {item.type}
                     </span>
                   )}
-                  <h3 style={{
-                    margin: '0',
-                    fontSize: '20px'
-                  }}>
+                  <h3 
+                    className="m-0 text-xl cursor-pointer"
+                    onClick={() => {
+                      onSpeakerClick(item.speaker);
+                    }}
+                  >
                     {item.title}
                   </h3>
                 </div>
                 {item.speaker && (
-                  <div style={{
-                    color: '#666',
-                    fontSize: '16px',
-                    marginTop: '4px'
-                  }}>
+                  <div 
+                    className="text-gray-600 text-sm mt-1 cursor-pointer"
+                    onClick={() => {
+                      onSpeakerClick(item.speaker);
+                    }}
+                  >
                     {item.speaker}
                   </div>
                 )}

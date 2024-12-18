@@ -49,7 +49,13 @@ const HomePage = () => {
           </button>
 
           {/* Desktop Menu */}
+         
           <div className="hidden md:flex space-x-6 text-sm items-center">
+            <a href="/schedule" className="hover:text-gray-600 flex items-center" onClick={(e) => {
+              e.preventDefault();
+              window.history.pushState({}, '', '/schedule');
+              document.querySelector('#schedule').scrollIntoView({ behavior: 'smooth' });
+            }}>SCHEDULE</a>
             <a href="/speakers" className="hover:text-gray-600 flex items-center" onClick={(e) => {
               e.preventDefault();
               window.history.pushState({}, '', '/speakers');
@@ -142,6 +148,12 @@ const HomePage = () => {
             md:hidden
           `}>
             <div className="flex flex-col space-y-8 text-xl">
+              <a href="/schedule" className="hover:text-gray-600 flex items-center" onClick={(e) => {
+                e.preventDefault();
+                window.history.pushState({}, '', '/schedule');
+                document.querySelector('#schedule').scrollIntoView({ behavior: 'smooth' });
+                setTimeout(() => setIsMenuOpen(false), 100);
+              }}>SCHEDULE</a>
               <a href="/speakers" className="hover:text-gray-600" onClick={(e) => {
                 e.preventDefault();
                 window.history.pushState({}, '', '/speakers');

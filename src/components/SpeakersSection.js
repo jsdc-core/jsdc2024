@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../styles/components/SpeakersSection.css';
 import speakers from '../resource/speaker.json';
 import { FaGithub, FaFacebook, FaInstagram, FaGlobe } from 'react-icons/fa';
 
-function SpeakersSection() {
+function SpeakersSection({ selectedSpeaker }) {
   const [expandedIndex, setExpandedIndex] = useState(null);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    if (selectedSpeaker) {
+      const index = speakers.findIndex(speaker => speaker.nickname === selectedSpeaker);
+      setExpandedIndex(index);
+      if (index !== -1 && sectionRef.current) {
+        sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [selectedSpeaker]);
 
   const toggleExpand = (index) => {
     setExpandedIndex(expandedIndex === index ? null : index);
@@ -23,9 +34,9 @@ function SpeakersSection() {
   };
 
   return (
-    <section id="speakers" className="speakers-section">
-      <h2 style={{ fontSize: '48px', textAlign: 'center' }}>SPEAKERS 講者資訊</h2>
-      <div className="speakers-list" style={{ marginTop: '2rem' }}>
+    <section id="speakers" className="speakers-section" ref={sectionRef}>
+      <h2 className="text-4xl md:text-5xl text-center">SPEAKERS 講者資訊</h2>
+      <div className="speakers-list mt-8">
         {speakers.map((speaker, index) => (
           <div 
             key={index} 
@@ -33,15 +44,15 @@ function SpeakersSection() {
           >
             <div className="speaker-main-content">
               <div className="speaker-info">
-                <div className="speaker-image" style={{ minHeight: '120px' }}>
+                <div className="speaker-image min-h-[120px]">
                   {speaker.image ? (
-                    <img src={speaker.image} style={{ width: '120px', height: '120px', objectFit: 'cover' }} alt={speaker.nickname} />
+                    <img src={speaker.image} className="w-[120px] h-[120px] object-cover" alt={speaker.nickname} />
                   ) : (
                     <div className="placeholder-image" />
                   )}
                 </div>
                 <div className="speaker-details">
-                  <h3>{speaker.nickname}</h3>
+                  <h3 className="text-lg md:text-xl">{speaker.nickname}</h3>
                   <div className="social-links">
                     {speaker.other && speaker.other.map((link, linkIndex) => (
                       <a 
@@ -66,7 +77,7 @@ function SpeakersSection() {
               </button>
             </div>
             <div className="speaker-description">
-              <p style={{ marginBottom: '1rem' }}>{speaker.introduction}</p>
+              <p className="mb-4">{speaker.introduction}</p>
               {speaker.topic && (
                 <div className="speaker-title">
                   <h4>題目：</h4>
