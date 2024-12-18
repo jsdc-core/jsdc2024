@@ -9,7 +9,7 @@
     {
       "time": "09:35 – 09:55",
       "title": "React Native 朝聖之路",
-      "speaker": "胡翔喻Kevin Hu(React Native)",
+      "speaker": "Kevin Hu",
       "type": "mobile"
     },
     {
@@ -21,7 +21,7 @@
     {
       "time": "10:00 – 10:20",
       "title": "New Generation Web - 我們從前端到微前端的故事",
-      "speaker": "John（劉奕為 ）",
+      "speaker": "John Liu",
       "type": "js"
     },
     {
@@ -57,7 +57,7 @@
     {
       "time": "11:15 – 11:35",
       "title": "一起探索 VoidZero 為 JS 生態系準備的瑞士刀",
-      "speaker": "Codefarmer",
+      "speaker": "codefarmer",
       "type": "Vite"
     },
     {
@@ -81,7 +81,7 @@
     {
       "time": "13:00 – 13:20",
       "title": "用 Jotai 打造更輕量的 React 狀態管理",
-      "speaker": "林敏皓(Terry)",
+      "speaker": "Terry Lin (林敏皓)",
       "type": "React"
     },
     {
@@ -93,7 +93,7 @@
     {
       "time": "13:25 – 13:45",
       "title": "輕鬆串接 Gemini API：從 Google AI Studio 到 Vertex AI in Firebase 的前端實作",
-      "speaker": "Vivian",
+      "speaker": "Vivian Yeh",
       "type": "Data"
     },
     {
@@ -117,7 +117,7 @@
     {
       "time": "14:15 – 14:35",
       "title": "Web Containers - Let’s develop Web with Web!!",
-      "speaker": "Johnny(LINE)",
+      "speaker": "Johnny",
       "type": "Web Container"
     },
     {
@@ -129,7 +129,7 @@
     {
       "time": "14:40 – 15:00",
       "title": "從 ThreeJs 邁向 WebXR： 建構未來網頁的沉浸體驗",
-      "speaker": "吳睿誠",
+      "speaker": "Ray 貓（吳睿誠）",
       "type": "Three.js"
     },
     {
@@ -165,7 +165,7 @@
     {
       "time": "15:55 – 16:15",
       "title": "與資料對話：深入探索 WrenAI 的開源與架構",
-      "speaker": "祥溥（Andy）",
+      "speaker": "Andy Yen",
       "type": "後端"
     },
     {
@@ -177,13 +177,13 @@
     {
       "time": "16:20 – 17:10",
       "title": "AI 時代下無法被取代的 JavaScript 開發者",
-      "speaker": "主持人：維元老師, 林敏皓(Terry), 吳睿誠 (Ray), 黃冠融, 祥溥（Andy）, Wei Wei",
+      "speaker": "主持人：維元老師, Terry Lin, 吳睿誠 (Ray), 黃冠融, Andy Yen",
       "type": "論壇討論"
     },
     {
       "time": "17:10 – 17:30",
       "title": "An introduction to source maps",
-      "speaker": "Nicolò Ribaudo 🌈🇪🇺",
+      "speaker": "Nicolò Ribaudo",
       "type": ""
     },
     {

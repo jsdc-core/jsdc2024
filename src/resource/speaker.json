@@ -36,8 +36,8 @@
     "image": "./images/speaker/taichunmin.png",
     "nickname": "戴均民",
     "introduction": "車能網資訊股份有限公司 飄到台北工作的台中人，目前是網站後端工程師，對 LINE Chatbot、RFID、量化交易有興趣，如果有興趣的話歡迎來跟我聊聊喔！",
-    "topic": null,
-    "outline": null,
+    "topic": "用網頁的 Web Serial 及 Web Bluetooth 控制你的設備",
+    "outline": "在 Web Bluetooth API 跟 Web Serial API 於 Chrome 上正式推出後，前端工程師可以很簡單的透過 JavaScript 為嵌入式設備開發跨平台的圖行化介面，快速支援 Windows、Mac、Linux、Android、iOS 等平台，使用者只需要透過特定瀏覽器打開網頁，就可以直接使用 Serial 或 BLE 直接控制嵌入式設備。",
     "other": [
       "https://github.com/taichunmin",
       "https://www.facebook.com/taichunmin",
@@ -48,8 +48,8 @@
     "image": "./images/speaker/terry_lin.jpg",
     "nickname": "Terry Lin",
     "introduction": "現任 MediaTek 前端工程師，專注於生成式 AI 平台的開發。過去在 Dcard 工作時，經常看到公司前輩活躍於社群中，長期潛水的我也首次探出水面，嘗試進行技術分享！有人說，分享本身也是自己學習更多的機會，希望能藉此與大家交流、共同成長。",
-    "topic": null,
-    "outline": null,
+    "topic": "用 Jotai 打造更輕量的 React 狀態管理",
+    "outline": "還在為 React 的狀態管理感到頭痛嗎？工具太複雜，還動不動就踩坑？別擔心，其實狀態管理可以很簡單。Jotai 採用原子化的設計理念，不僅讓開發過程變得直覺，也能有效減少心智負擔。本講座將深入淺出地介紹 Jotai 的核心概念，並分享導入團隊的實踐經驗，幫助大家輕鬆掌握這個工具。",
     "other": [
       "https://github.com/terry623",
       "https://www.facebook.com/terry92516"
@@ -71,8 +71,8 @@
     "image": "./images/speaker/nicolo-ribaudo.jpg",
     "nickname": "Nicolò Ribaudo",
     "introduction": "I'm a developer who loves open source and JavaScript. I work at Igalia, where I help push the web forward, and I maintain Babel — the JavaScript compiler. I'm also a TC39 delegate and I've helped develop different JavaScript proposals over the years.",
-    "topic": null,
-    "outline": null,
+    "topic": "An introduction to source maps",
+    "outline": "Description: Modern JavaScript applications are built using many different tools that transform the code you write into some other JavaScript that the browser then runs: transpilers, bundlers, minifiers, ... Yet, when there is a bug we can open the browser devtools and debug our original code, as if it was not transformed at all! All of this works thanks to source maps, that tell the browser how to reverse all the changes that our build pipeline applied to our code: how do they work?",
     "other": [
       "https://github.com/nicolo-ribaudo",
       "https://bsky.app/profile/nicr.dev"
@@ -106,8 +106,8 @@
     "image": "./images/speaker/andy_yen2.png",
     "nickname": "Andy Yen",
     "introduction": "涉世未深的後端工程師，喜歡舒服的工作環境，也致力於���團隊的工作環境變舒服。喜歡開源和資料庫的世界。",
-    "topic": null,
-    "outline": null,
+    "topic": "與資料對話：深入探索 WrenAI 的開源與架構",
+    "outline": "在數據驅動的時代，資料查詢往往需要專業的 SQL 技能，這對許多開發者和非技術用戶來說是一大挑戰。WrenAI，一個由 Canner 開發的開源 Text-to-SQL 解決方案，透過結合強大的大語言模型 (LLM) 和靈活的系統架構，讓使用者能以自然語言與資料庫互動。",
     "other": [
       "https://github.com/onlyjackfrost",
       "https://www.facebook.com/kiki3152TW/"
@@ -117,8 +117,8 @@
     "image": "./images/speaker/john_liu.jpg",
     "nickname": "John Liu",
     "introduction": "時常在 Web 全端開發技術領域打滾，有過多種語言和框架經驗，最近較常研究軟體品質、微前端與微服務議題，喜歡看見隊勝利大過個人勝利。\n\n目前在來自矽谷的資安公司 Netskope 協助帶團隊開發 SaaS 平台，並偶爾當個講師分享技術經驗。",
-    "topic": null,
-    "outline": null,
+    "topic": "New Generation Web - 我們從前端到微前端的故事",
+    "outline": "- 問題的起點\n\n- 技術轉型：從單一架構到微前端\n\n- 遷移計畫：技術和業務的平衡",
     "other": [
       "https://github.com/johnliu-tw",
       "https://www.facebook.com/johnliu.software.thinking",
